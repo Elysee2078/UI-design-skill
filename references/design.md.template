@@ -1,0 +1,117 @@
+# Product design system
+
+> Generated/maintained from implemented project evidence. Mark recommendations that are not yet implemented instead of presenting them as current facts.
+
+## 1. Interface character
+
+- Product type:
+- Primary users:
+- Primary tasks:
+- Density profile: spacious / balanced / dense / mixed
+- Visual characteristics:
+- Explicit anti-patterns/constraints:
+
+## 2. Source of truth
+
+| Concern | File / source | Status |
+|---|---|---|
+| Theme/tokens | | implemented |
+| Global styles | | implemented |
+| Component primitives | | implemented |
+| Typography | | implemented |
+| Icons | | implemented |
+| Motion | | implemented |
+
+## 3. Colors
+
+### Semantic roles
+
+| Token | Purpose | Light | Dark | Notes |
+|---|---|---|---|---|
+| `--background` | App/page background | | | |
+| `--surface` | Default raised/contained surface | | | |
+| `--text` | Primary text | | | |
+| `--text-muted` | Secondary text | | | |
+| `--border` | Default boundary/divider | | | |
+| `--primary` | Primary action/brand role | | | |
+| `--danger` | Destructive/error role | | | |
+| `--focus-ring` | Keyboard focus | | | |
+
+## 4. Typography
+
+- Font family:
+- Body size/line-height:
+- Heading scale:
+- Weights in use:
+- Numeric treatment:
+- Long-form measure:
+
+## 5. Spacing and layout
+
+- Primitive spacing scale:
+- Semantic layout gaps:
+- Page/container max widths:
+- Grid rules:
+- Dense UI rules:
+- Responsive/container-query rules:
+
+## 6. Borders, radii and elevation
+
+- Border widths:
+- Radius scale:
+- Shadow/elevation policy:
+- Where elevation must NOT be used:
+
+## 7. Core components
+
+For each core component record variants, size/density, states, icon rules and accessibility invariants.
+
+### Button
+
+### Input / field
+
+### Select / combobox
+
+### Card / surface
+
+### Dialog / drawer
+
+### Navigation
+
+### Table / data display
+
+## 8. Icons
+
+- Library/source:
+- Default sizes:
+- Stroke/fill policy:
+- Icon-only control naming rule:
+
+## 9. Motion
+
+- Fast interaction duration:
+- Standard transition duration:
+- Easing/spring conventions:
+- Reduced-motion behavior:
+- Prohibited ambient/loop patterns:
+
+## 10. Accessibility invariants
+
+- Visible focus:
+- Touch target baseline:
+- Form labels/errors:
+- Keyboard patterns:
+- Contrast policy:
+- Reduced motion:
+
+## 11. UI states
+
+Required patterns for loading, empty, no-results, error, disabled, success, destructive confirmation and permission-limited states.
+
+## 12. Known exceptions / debt
+
+Record intentional legacy exceptions and migration targets. Do not silently normalize them in documentation.
+
+## 13. Recommended but not implemented
+
+Keep future recommendations here so they cannot be confused with the current system.
