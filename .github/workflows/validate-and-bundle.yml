@@ -1,0 +1,35 @@
+name: Validate and bundle UI skills
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-and-bundle:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Validate skills
+        run: python scripts/validate_skills.py
+
+      - name: Build Lovable ZIP bundles
+        run: python scripts/build_lovable_bundles.py
+
+      - name: Upload Lovable bundles
+        uses: actions/upload-artifact@v4
+        with:
+          name: lovable-ui-skills
+          path: dist/lovable/*.zip
+          if-no-files-found: error
