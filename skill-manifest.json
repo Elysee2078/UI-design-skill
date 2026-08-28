@@ -1,0 +1,25 @@
+{
+  "name": "ui-design-skill-pack",
+  "version": "0.1.0",
+  "root_skill": "SKILL.md",
+  "agent_instructions": "AGENTS.md",
+  "skills": [
+    {"name": "ui-audit", "path": "skills/ui-audit/SKILL.md"},
+    {"name": "ui-build", "path": "skills/ui-build/SKILL.md"},
+    {"name": "design-system-bootstrap", "path": "skills/design-system-bootstrap/SKILL.md"},
+    {"name": "create-design-md", "path": "skills/create-design-md/SKILL.md"},
+    {"name": "complex-product-ui", "path": "skills/complex-product-ui/SKILL.md"},
+    {"name": "motion-and-microinteractions", "path": "skills/motion-and-microinteractions/SKILL.md"},
+    {"name": "accessibility-and-input", "path": "skills/accessibility-and-input/SKILL.md"},
+    {"name": "responsive-type-spacing", "path": "skills/responsive-type-spacing/SKILL.md"},
+    {"name": "visual-qa", "path": "skills/visual-qa/SKILL.md"}
+  ],
+  "live_sources": {
+    "ui_skills_mcp": "https://www.ui-skills.com/mcp",
+    "reui_mcp": "https://mcp.reui.io",
+    "reui_registry": "https://reui.io/r/{style}/{name}.json"
+  },
+  "source_policy": "references/source-catalog.md",
+  "lovable_bundle_script": "scripts/build_lovable_bundles.py",
+  "validator": "scripts/validate_skills.py"
+}
