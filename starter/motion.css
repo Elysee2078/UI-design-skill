@@ -1,0 +1,40 @@
+/* Intentional motion starter. Keep state communication when reduced motion is requested. */
+
+:root {
+  --motion-fast: 120ms;
+  --motion-standard: 180ms;
+  --motion-slow: 280ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
+  --ease-enter: cubic-bezier(0, 0, 0.2, 1);
+  --ease-exit: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.ui-transition {
+  transition-duration: var(--motion-standard);
+  transition-timing-function: var(--ease-standard);
+  transition-property: color, background-color, border-color, opacity, transform, box-shadow;
+}
+
+.ui-pressable:active {
+  transform: scale(0.98);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 1ms;
+    --motion-standard: 1ms;
+    --motion-slow: 1ms;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+  }
+
+  .ui-pressable:active {
+    transform: none;
+  }
+}
