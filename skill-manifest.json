@@ -1,6 +1,6 @@
 {
   "name": "ui-design-skill-pack",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "root_skill": "SKILL.md",
   "agent_instructions": "AGENTS.md",
   "skills": [
@@ -12,6 +12,7 @@
     {"name": "motion-and-microinteractions", "path": "skills/motion-and-microinteractions/SKILL.md"},
     {"name": "accessibility-and-input", "path": "skills/accessibility-and-input/SKILL.md"},
     {"name": "responsive-type-spacing", "path": "skills/responsive-type-spacing/SKILL.md"},
+    {"name": "brand-art-direction", "path": "skills/brand-art-direction/SKILL.md"},
     {"name": "visual-qa", "path": "skills/visual-qa/SKILL.md"}
   ],
   "live_sources": {
@@ -20,6 +21,7 @@
     "reui_registry": "https://reui.io/r/{style}/{name}.json"
   },
   "source_policy": "references/source-catalog.md",
+  "brand_art_direction_sources": "references/brand-art-direction-sources.md",
   "lovable_bundle_script": "scripts/build_lovable_bundles.py",
   "validator": "scripts/validate_skills.py"
 }
