@@ -47,7 +47,7 @@ Official CLI and MCP overview: https://higgsfield.ai/CLI and https://higgsfield.
 
 This is a remote, **optional paid media provider**, not a live UI component registry. Use `skills/higgsfield-video-integration/SKILL.md` for provider-specific video routing and `skills/ai-video-production/SKILL.md` for provider-neutral production.
 
-Do not claim a Higgsfield MCP or CLI connection is already configured merely because these links are in this repository. Before any use, verify the user's connected/installed host capabilities and live model API contracts. OAuth login, installer execution and credit-consuming jobs require explicit permission. Never store Huggsfield/Higgsfield auth data in code, docs, Notion or a public skill package; never train a face/voice model without consent.
+Do not claim a Higgsfield MCP or CLI connection is already configured merely because these links are in this repository. Before any use, verify the user's connected/installed host capabilities and live model API contracts. OAuth login, installer execution and credit-consuming jobs require explicit permission. Never store Higgsfield auth data in code, docs, Notion or a public skill package; never train a face/voice model without consent.
 
 `npx skills add higgsfield-ai/skills` is the upstream's optional host-side install command; it is **not executed** as part of this package, and bundled Lovable skills do not contain a runnable Higgsfield CLI.
 
