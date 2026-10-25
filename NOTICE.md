@@ -18,4 +18,6 @@ Special attention:
 - ReUI has open-source/free resources as well as paid Pro resources. A premium key grants access; this repository does not include or bypass one.
 - Catalogs such as Component Gallery, Design Systems One, VibePrompts, Icon Creator, background galleries and similar sites are primarily research/reference sources unless their current upstream license explicitly permits code redistribution.
 
-See `references/source-catalog.md` for the operational classification used by the skills.
+- `higgsfield-ai/skills` is linked under its own MIT license (Copyright © 2026 Higgsfield AI), not vendored. Proprietary hosted generation, credits, identity training, media uploads and provider models are **not** licensed as part of our MIT repository. Do not silently run the upstream `curl | sh` setup or submit billable/biometric jobs; review security, permissions, privacy and current terms first.
+
+See `references/source-catalog.md` and `references/higgsfield-ai-video-review.md` for classification used by the skills.

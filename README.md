@@ -38,6 +38,8 @@ The agent must first inspect product evidence, identify the actual design constr
 | `accessibility-and-input` | Semantics, forms, focus, keyboard, touch and ARIA patterns |
 | `responsive-type-spacing` | Fluid typography/spacing and responsive recomposition |
 | `visual-qa` | Rendered-state, responsive, keyboard and regression verification |
+| `ai-video-production` | Provider-neutral storyboards, real UI capture, cards, voiceover/caption sync, editing, video and release QA |
+| `higgsfield-video-integration` | Optional, gated Higgsfield image/video/UGC/explainer/thumbnail provider with auth, privacy and credit controls |
 
 ## Repository layout
 
@@ -52,6 +54,14 @@ starter/                         # registry config, semantic tokens, motion and 
 scripts/                         # bundle/validation helpers
 .github/workflows/               # CI validation + Lovable ZIP artifacts
 ```
+
+## Video production and Higgsfield (optional)
+
+The video workflow is **brief → evidence + official brand → hook/script → storyboard → real footage + optional generated clips → narration/subtitles → review → approval → export**. Use `skills/ai-video-production/SKILL.md` for every video request, even when the user will edit in Canva. This covers TikTok, Instagram Reels, Shorts, educational sports tutorials, community stories, and campaign videos.
+
+`skills/higgsfield-video-integration/SKILL.md` maps this flow to selected upstream [Higgsfield AI agent skills](https://github.com/higgsfield-ai/skills): generated B-roll/UGC, storyboard explainers, social covers, optional identity consistency and post-render attention scoring. **The repository contains a provider adapter and references, not an installed Higgsfield CLI or live account connection.** It can be used without signing up or buying credits; actual Higgsfield generations require user-authorized setup, authentication, media upload and spending. Use provider-neutral/manual Canva or FFmpeg outputs when suitable.
+
+See `references/higgsfield-ai-video-review.md` for upstream version, license, supported modes, risks and roadmap toward semi-automated approved media production. Upstream MIT source is linked rather than vendored. No auto-publishing, fabricated application screenshots or face-training without explicit rights.
 
 ## Recommended source strategy
 
@@ -78,7 +88,7 @@ The GitHub Action `.github/workflows/validate-and-bundle.yml` performs both step
 
 ## Lovable
 
-Lovable can import a public GitHub repository containing `SKILL.md`, or upload a ZIP containing `SKILL.md`. This repository is private, so the reliable route is the generated ZIP artifacts unless you intentionally make the repository public later.
+Lovable can import a public GitHub repository containing `SKILL.md`, or upload a ZIP containing `SKILL.md`. This repository is public as currently inspected, but the GitHub Actions-generated ZIP artifacts remain a reliable Lovable-import route. Do not include any secrets or private brand assets in public bundles.
 
 See `adapters/lovable.md`.
 

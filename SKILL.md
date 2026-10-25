@@ -1,6 +1,6 @@
 ---
 name: ui-design-orchestrator
-description: Use when a user asks to design, build, redesign, improve, audit, polish, or make a web/product interface or branded visual less generic; or when an agent must choose UI components, design tokens, motion, accessibility, responsive typography/spacing, complex product UI patterns, brand art direction, Canva/print collateral, or visual QA.
+description: Use when a user asks to design, build, redesign, improve, audit, polish, or make a web/product interface or branded visual less generic; or when an agent must choose UI components, design tokens, motion, accessibility, responsive typography/spacing, complex product UI patterns, brand art direction, Canva/print collateral, evidence-based AI video production, Higgsfield integration, or visual QA.
 ---
 
 # UI Design Orchestrator
@@ -37,6 +37,8 @@ Use the smallest focused skill that covers the work:
 | Fluid type, spacing, density and responsive adaptation | `skills/responsive-type-spacing/SKILL.md` |
 | Canva, business cards, ads, campaign visuals, posters, print collateral, merch, branded image generation, brand fidelity | `skills/brand-art-direction/SKILL.md` |
 | Screenshot-based and state-based final verification | `skills/visual-qa/SKILL.md` |
+| Educational/UGC videos, reels, product walkthroughs, voiceover, storyboards, edited clips, captions and video QA | `skills/ai-video-production/SKILL.md` |
+| Optional Higgsfield CLI/MCP models, UGC presenter video, generated B-roll, explainers, Soul identity, shorts covers or video scoring | `skills/higgsfield-video-integration/SKILL.md` |
 
 For substantial product-UI work, use this sequence unless evidence suggests otherwise:
 
@@ -47,6 +49,8 @@ For substantial brand/collateral work:
 `brand-art-direction -> create/rebuild with official assets -> brand/production QA`
 
 For branded product UI, compose `brand-art-direction` with the relevant UI skills rather than forcing either discipline to substitute for the other.
+
+For video production, route through `ai-video-production` first and `brand-art-direction` for any brand assets. Invoke optional `higgsfield-video-integration` only for a **requested/approved** third-party provider step. Never treat reading an upstream skill as permission to install software, upload assets, spend credits or publish. Respect the actual user output scope (e.g. seven static Canva cards are not a request to render a video).
 
 ## Source hierarchy
 
